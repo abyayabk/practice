@@ -1,0 +1,28 @@
+.archive-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Spread the movie cards evenly across the container */
+    padding: 20px; /* Add padding around the archive content */
+}
+
+.movie-card {
+    width: calc(33.33% - 20px); /* Calculate width for three cards per row with spacing */
+    margin-bottom: 20px; /* Add spacing between rows */
+    border-radius: 5px; /* Rounded corners for the movie card */
+    overflow: hidden; /* Hide any overflow content */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+}
+
+.movie-card img {
+    width: 100%; /* Ensure the image fills the container horizontally */
+    height: 200px; /* Fixed height for the image */
+    object-fit: cover; /* Ensure the image covers the entire container without distortion */
+    display: block; /* Ensure the image respects its container's dimensions */
+}
+
+.movie-title {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for movie title */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}

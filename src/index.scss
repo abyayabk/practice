@@ -1,0 +1,94 @@
+.carousel {
+    top: 10px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    margin: auto; /* Center alignment */
+}
+
+.carousel .slider {
+    transition: transform 0.5s ease; /* Add transition for transform property */
+}
+
+.carousel img {
+    object-fit: cover;
+}
+
+.slide_direction {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.left,
+.right {
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: translateY(-50%);
+    color: white;
+    border-radius: 50%;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.left:hover,
+.right:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.indicator {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.Flex {
+    display: flex;
+    justify-content: center;
+}
+
+.FlexBlock {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.attention-delete {
+    color: red;
+    position: relative;
+    top: -3px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.attention-delete:hover {
+    transform: scale(1.5);
+}
